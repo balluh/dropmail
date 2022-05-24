@@ -1,4 +1,5 @@
 # Dropmail wrapper
+wrapper for [dropmail.me](https://dropmail.me)
 
 ## Installation
 
