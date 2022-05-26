@@ -14,7 +14,7 @@ type Mail struct {
 }
 
 func (c *Client) GetInbox() ([]Mail, error) {
-	data := `{"query":"query {sessions {id, expiresAt, mails {fromAddr, toAddr, text, headerSubject}}}"}`
+	data := `{"query":"query {sessions {id, expiresAt, mails {fromAddr, text, headerSubject}}}"}`
 
 	req, err := http.NewRequest("POST", "https://dropmail.me/api/graphql/"+c.Token, strings.NewReader(data))
 	if err != nil {

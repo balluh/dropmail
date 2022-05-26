@@ -9,6 +9,8 @@ go get github.com/monkeyskid/dropmail
 
 ## Example
 
+[waiting for email example](example)
+
 ```go
 d, err := dropmail.New(dropmail.DomainRandom)
 if err != nil {
@@ -17,7 +19,7 @@ if err != nil {
 
 fmt.Println(d.Address)
 
-mails, err := d.GetMails()
+mails, err := d.GetInbox()
 if err != nil {
     panic(err)
 }
