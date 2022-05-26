@@ -9,7 +9,7 @@ go get github.com/monkeyskid/dropmail
 
 ## Example
 
-[waiting for email example](example)
+[waiting for email example](example/example.go)
 
 ```go
 d, err := dropmail.New(dropmail.DomainRandom)
