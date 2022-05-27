@@ -9,8 +9,6 @@ go get github.com/monkeyskid/dropmail
 
 ## Example
 
-[waiting for email example](example/example.go)
-
 ```go
 d, err := dropmail.New(dropmail.DomainRandom)
 if err != nil {
@@ -28,3 +26,5 @@ for _, mail := range mails {
     fmt.Println(mail.Text, mail.Subject, mail.From)
 }
 ```
+
+[waiting for email example](example/example.go)
