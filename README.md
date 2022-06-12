@@ -4,7 +4,7 @@ wrapper for [dropmail.me](https://dropmail.me)
 ## Installation
 
 ```bash
-go get github.com/monkeyskid/dropmail
+go get github.com/balluh/dropmail
 ```
 
 ## Example
