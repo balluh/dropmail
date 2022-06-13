@@ -1,4 +1,4 @@
-module github.com/monkeyskid/dropmail
+module github.com/balluh/dropmail
 
 go 1.18
 
