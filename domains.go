@@ -20,6 +20,6 @@ const (
 	DomainEmltmpCom  domainType = "RG9tYWluOjY"
 	DomainFirsteMl   domainType = "RG9tYWluOjEy"
 	DomainFlymailTk  domainType = "RG9tYWluOjE4"
-	DomainFreemNet   domainType = "RG9tYWluOjE1"
+	DomainFreemlNet  domainType = "RG9tYWluOjE1"
 	DomainNetmailTk  domainType = "RG9tYWluOjE0"
 )
