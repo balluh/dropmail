@@ -7,7 +7,7 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/google/uuid"
+	"github.com/rs/xid"
 )
 
 type Client struct {
@@ -16,7 +16,7 @@ type Client struct {
 }
 
 func New(domain domainType) (*Client, error) {
-	token := uuid.New().String()
+	token := xid.New().String()
 	var data string
 
 	if domain == "" {
