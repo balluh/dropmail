@@ -15,7 +15,7 @@ type Client struct {
 	Address string
 }
 
-func New(domain domainType) (*Client, error) {
+func New(domain Domain) (*Client, error) {
 	token := xid.New().String()
 	var data string
 
