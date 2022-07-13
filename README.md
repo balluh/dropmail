@@ -1,5 +1,5 @@
-# Dropmail wrapper
-wrapper for [dropmail.me](https://dropmail.me)
+# Dropmail
+API wrapper for [dropmail.me](https://dropmail.me)
 
 ## Installation
 
@@ -10,19 +10,30 @@ go get github.com/balluh/dropmail
 ## Example
 
 ```go
-d, err := dropmail.New(dropmail.DomainRandom)
-if err != nil {
-    panic(err)
-}
+package main
 
-fmt.Println(d.Address)
+import (
+    "fmt"
 
-mails, err := d.GetInbox()
-if err != nil {
-    panic(err)
-}
+    "github.com/balluh/dropmail"
+)
 
-for _, mail := range mails {
-    fmt.Println(mail.Text, mail.Subject, mail.From)
+func main() {
+    // Check domains.go for list of domains
+    d, err := dropmail.New(dropmail.DomainRandom)
+    if err != nil {
+        panic(err)
+    }
+
+    fmt.Println(d.Address)
+
+    mails, err := d.GetInbox()
+    if err != nil {
+        panic(err)
+    }
+
+    for _, mail := range mails {
+        fmt.Println(mail.Text, mail.Subject, mail.From)
+    }
 }
 ```
